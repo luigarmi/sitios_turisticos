@@ -1,3 +1,94 @@
+@media (max-width: 480px) {
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .destinos .destino {
+    padding: 15px;
+  }
+
+  .contacto {
+    padding: 20px 10px;
+  }
+
+  .form-contacto input,
+  .form-contacto textarea {
+    font-size: 0.9rem;
+  }
+
+  .form-contacto button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .menu li a {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+}
+
+/* Tablets: de 481px a 768px */
+@media (max-width: 768px) {
+  .menu {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .galeria-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .destinos .destino img {
+    height: 200px;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+
+  .form-contacto {
+    gap: 15px;
+  }
+}
+
+/* Laptops pequeños: de 769px a 1024px */
+@media (max-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+
+  .galeria-grid img {
+    height: 180px;
+  }
+
+  .destinos .destino img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .form-contacto input,
+  .form-contacto textarea {
+    font-size: 1rem;
+  }
+}
 body {
   background-color: #f4f9ff;
   color: #2a3d66;
