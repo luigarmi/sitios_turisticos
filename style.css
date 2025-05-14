@@ -349,7 +349,7 @@ header h1 {
   }
 }
 
-@media screen and (max-width: 260px) {
+@media screen and (max-width: 150px) {
   header h1 {
     font-size: 1rem;
   }
