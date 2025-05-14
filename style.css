@@ -1,63 +1,50 @@
+/* Estilos generales */
 body {
   background-color: #f4f9ff;
   color: #2a3d66;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0;
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
-  box-sizing: border-box;
 }
 
+/* Header */
 header {
   background-color: #2a3d66;
   color: white;
   padding: 20px 0;
-  width: 100%;
-  box-sizing: border-box;
+  text-align: center;
 }
 
 header h1 {
-  text-align: center;
-  font-size: 2rem;
   margin: 0;
+  font-size: 2rem;
 }
 
+/* Menú */
 .menu {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  padding: 10px 0;
   gap: 40px;
   list-style: none;
-  margin: 0;
-}
-
-.menu li {
-  position: relative;
+  padding: 0;
+  margin: 20px 0;
+  flex-wrap: wrap;
 }
 
 .menu li a {
   color: white;
   text-decoration: none;
   padding: 10px 15px;
-  position: relative;
   font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
   transition: color 0.3s ease, transform 0.3s ease;
-  display: block;
-  max-width: 100%;
-  overflow-wrap: break-word;
-  text-align: center;
+  position: relative;
 }
 
 .menu li a::after {
@@ -85,6 +72,7 @@ header h1 {
   transform: scale(1.1);
 }
 
+/* Secciones */
 .intro, .card, .form-contacto {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   background: white;
@@ -111,6 +99,7 @@ header h1 {
   transform: scale(1.05);
 }
 
+/* Cards */
 .cards {
   display: flex;
   gap: 20px;
@@ -133,13 +122,7 @@ header h1 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-  background-color: #1d2b44;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-
+/* Galería */
 .galeria-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -160,6 +143,7 @@ footer {
   transform: scale(1.05);
 }
 
+/* Destinos */
 .destinos .destino {
   display: flex;
   flex-direction: column;
@@ -195,6 +179,7 @@ footer {
   font-size: 1rem;
 }
 
+/* Contacto */
 .contacto {
   background-color: #ffffff;
   padding: 40px 20px;
@@ -267,34 +252,81 @@ footer {
   color: #2a3d66;
 }
 
+/* Footer */
+footer {
+  background-color: #1d2b44;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* RESPONSIVE DESIGN: Márgenes, paddings, menú y header */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .menu li a {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 12px 0;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .menu li a {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .container {
+    width: 95%;
+    margin: 0 10px;
+  }
+}
+
 @media screen and (max-width: 360px) {
   header {
-    padding: 8px;
+    padding: 8px 0;
   }
 
   header h1 {
     font-size: 1rem;
   }
 
-  .menu {
-    flex-direction: column;
-    gap: 5px;
-    padding: 5px 0;
-  }
-
   .menu li a {
-    font-size: 0.8rem;
-    padding: 6px 8px;
-  }
-
-  .card img,
-  .galeria-grid img,
-  .destinos .destino img {
-    height: 150px;
+    font-size: 0.75rem;
+    padding: 5px 8px;
   }
 
   .btn {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     padding: 10px 20px;
+  }
+
+  .container {
+    margin: 0 5px;
   }
 }
