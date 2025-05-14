@@ -328,7 +328,7 @@ header h1 {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 80px) {
   header {
     padding: 10px 5px;
   }
