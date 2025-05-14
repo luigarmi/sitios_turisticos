@@ -283,7 +283,7 @@ footer {
 }
 
 /* Dispositivos móviles en posición horizontal (landscape) */
-@media screen and (max-height: 550px) and (orientation: landscape) {
+@media screen and (max-height: 600px) and (orientation: landscape) {
   header h1 {
     font-size: 1.2rem;
     margin-bottom: 5px;
@@ -292,7 +292,7 @@ footer {
   .menu {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 9px;
     padding: 5px 0;
   }
 
