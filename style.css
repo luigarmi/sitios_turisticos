@@ -1,73 +1,90 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f4f9ff;
-  color: #2a3d66;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  overflow-x: hidden;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* HEADER */
+/* Estilos generales del header */
 header {
   background-color: #2a3d66;
   color: white;
   padding: 10px 0;
+  width: 100%;
 }
 
+/* Contenedor centrado */
+header .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Título del sitio */
 header h1 {
   font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 10px;
+  margin: 10px 0;
+  word-wrap: break-word;
 }
 
-/* ICONO HAMBURGUESA */
+/* Botón de hamburguesa (oculto por defecto) */
 .menu-toggle {
   display: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: white;
   cursor: pointer;
   text-align: right;
-  margin-right: 10px;
 }
 
-/* MENÚ */
+/* Menú horizontal por defecto */
 .menu {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
   list-style: none;
   padding: 0;
-  transition: all 0.3s ease-in-out;
+  margin: 10px 0 0 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .menu li a {
   color: white;
   text-decoration: none;
+  padding: 8px 12px;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
-  transition: color 0.3s;
-  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: block;
+  word-break: break-word;
 }
 
-.menu li a:hover {
+/* Línea animada debajo del enlace */
+.menu li a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: #f09a24;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+
+.menu li a:hover::after,
+.menu li a.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.menu li a:hover,
+.menu li a.active {
   color: #f09a24;
+  transform: scale(1.05);
 }
 
-/* RESPONSIVO: mostrar hamburguesa y ocultar menú */
+/* RESPONSIVE MENU: desde 768px hacia abajo */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
+    text-align: right;
+    margin-bottom: 10px;
   }
 
   .menu {
@@ -75,17 +92,38 @@ header h1 {
     align-items: center;
     display: none;
     background-color: #2a3d66;
+    gap: 10px;
   }
 
   .menu.active {
     display: flex;
   }
 
-  .menu li {
-    margin: 10px 0;
+  .menu li a {
+    font-size: 0.95rem;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* MÁS ADAPTADO: para pantallas muy pequeñas desde 150px */
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 1.2rem;
+    padding: 0 10px;
   }
 
   .menu li a {
-    font-size: 1rem;
+    font-size: 0.85rem;
+    padding: 10px;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 280px) {
+  .menu li a {
+    font-size: 0.75rem;
+    padding: 8px;
   }
 }
