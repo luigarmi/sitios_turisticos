@@ -260,30 +260,77 @@ footer {
   padding: 20px 0;
 }
 
-/* RESPONSIVE DESIGN: Márgenes, paddings, menú y header */
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f9ff;
+  color: #2a3d66;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #2a3d66;
+  color: white;
+  padding: 16px 10px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+/* Menú principal */
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 10px 0;
+  background-color: #2a3d66;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.menu li a:hover {
+  color: #f09a24;
+}
+
+/* Responsivo */
 @media screen and (max-width: 768px) {
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .menu {
-    flex-wrap: wrap;
     gap: 15px;
   }
 
   .menu li a {
-    font-size: 0.95rem;
-    padding: 8px 10px;
-  }
-
-  .container {
-    width: 95%;
+    font-size: 0.9rem;
+    padding: 6px 10px;
   }
 }
 
 @media screen and (max-width: 480px) {
   header {
-    padding: 12px 0;
+    padding: 10px 5px;
   }
 
   header h1 {
@@ -292,26 +339,17 @@ footer {
 
   .menu {
     flex-direction: column;
+    align-items: center;
     gap: 10px;
-    padding: 0;
   }
 
   .menu li a {
     font-size: 0.85rem;
-    padding: 6px 10px;
-  }
-
-  .container {
-    width: 95%;
-    margin: 0 10px;
+    padding: 6px 12px;
   }
 }
 
 @media screen and (max-width: 360px) {
-  header {
-    padding: 8px 0;
-  }
-
   header h1 {
     font-size: 1rem;
   }
@@ -319,14 +357,5 @@ footer {
   .menu li a {
     font-size: 0.75rem;
     padding: 5px 8px;
-  }
-
-  .btn {
-    font-size: 0.8rem;
-    padding: 10px 20px;
-  }
-
-  .container {
-    margin: 0 5px;
   }
 }
