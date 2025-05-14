@@ -2,23 +2,20 @@
 header {
   background-color: #2a3d66;
   color: white;
-  padding: 10px 0;
   width: 100%;
 }
 
 header .container {
-  width: 90%;
+  width: 100%; /* Sin margen ni padding */
   max-width: 1200px;
-  margin: 0 auto;
   box-sizing: border-box;
-  padding: 0 5%; /* Esto ajusta el margen lateral */
 }
 
 /* Título del sitio */
 header h1 {
   font-size: 1.5rem;
   text-align: center;
-  margin: 10px 0;
+  margin: 0; /* Eliminar margen */
   word-wrap: break-word;
 }
 
@@ -29,8 +26,8 @@ header h1 {
   flex-wrap: wrap;
   gap: 20px;
   list-style: none;
-  padding: 0;
-  margin: 10px 0 0 0;
+  padding: 0; /* Eliminar padding */
+  margin: 0; /* Eliminar margin */
   overflow-wrap: break-word;
 }
 
@@ -105,11 +102,6 @@ header h1 {
   header h1 {
     font-size: 1.3rem;
   }
-
-  /* Margen adaptado */
-  header .container {
-    padding: 0 8%;
-  }
 }
 
 /* RESPONSIVE: Desde 320px hacia abajo */
@@ -120,11 +112,6 @@ header h1 {
 
   header h1 {
     font-size: 1.1rem;
-  }
-
-  /* Margen adaptado */
-  header .container {
-    padding: 0 12%;
   }
 }
 
@@ -137,28 +124,6 @@ header h1 {
   header h1 {
     font-size: 1rem;
   }
-
-  /* Margen adaptado */
-  header .container {
-    padding: 0 15%;
-  }
-}
-
-/* RESPONSIVE: Para pantallas ultra pequeñas (mínimo legible) */
-@media (max-width: 180px) {
-  .menu li a {
-    font-size: 0.65rem;
-    padding: 6px;
-  }
-
-  header h1 {
-    font-size: 0.9rem;
-  }
-
-  /* Margen adaptado */
-  header .container {
-    padding: 0 18%;
-  }
 }
 
 /* Para pantallas más grandes */
@@ -170,11 +135,6 @@ header h1 {
   .menu li a {
     font-size: 1.2rem;
   }
-
-  /* Margen adaptado */
-  header .container {
-    padding: 0 4%;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -185,11 +145,6 @@ header h1 {
   .menu li a {
     font-size: 1.3rem;
   }
-
-  /* Margen adaptado */
-  header .container {
-    padding: 0 3%;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -199,10 +154,5 @@ header h1 {
 
   .menu li a {
     font-size: 1.4rem;
-  }
-
-  /* Margen adaptado */
-  header .container {
-    padding: 0 2%;
   }
 }
