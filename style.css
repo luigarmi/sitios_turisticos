@@ -1,4 +1,3 @@
-/* Estilos generales del header */
 header {
   background-color: #2a3d66;
   color: white;
@@ -21,7 +20,7 @@ header h1 {
   word-wrap: break-word;
 }
 
-/* Botón hamburguesa */
+/* Botón hamburguesa (invisible inicialmente) */
 .menu-toggle {
   display: none;
   font-size: 2rem;
@@ -30,7 +29,7 @@ header h1 {
   text-align: right;
 }
 
-/* Menú */
+/* Menú de navegación */
 .menu {
   display: flex;
   justify-content: center;
@@ -104,7 +103,7 @@ header h1 {
   }
 }
 
-/* Desde 480px hacia abajo: letra más pequeña */
+/* RESPONSIVE: Desde 480px hacia abajo (letra más pequeña) */
 @media (max-width: 480px) {
   .menu li a {
     font-size: 0.9rem;
@@ -115,7 +114,7 @@ header h1 {
   }
 }
 
-/* Desde 320px: más pequeña */
+/* RESPONSIVE: Desde 320px hacia abajo */
 @media (max-width: 320px) {
   .menu li a {
     font-size: 0.8rem;
@@ -126,7 +125,7 @@ header h1 {
   }
 }
 
-/* Desde 240px: aún más pequeña */
+/* RESPONSIVE: Desde 240px hacia abajo */
 @media (max-width: 240px) {
   .menu li a {
     font-size: 0.7rem;
@@ -137,7 +136,7 @@ header h1 {
   }
 }
 
-/* Desde 150px: mínimo legible */
+/* RESPONSIVE: Para pantallas ultra pequeñas (mínimo legible) */
 @media (max-width: 180px) {
   .menu li a {
     font-size: 0.65rem;
@@ -146,5 +145,36 @@ header h1 {
 
   header h1 {
     font-size: 0.9rem;
+  }
+}
+
+/* Para pantallas más grandes */
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .menu li a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .menu li a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  .menu li a {
+    font-size: 1.4rem;
   }
 }
