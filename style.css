@@ -1,10 +1,4 @@
-/* Evitar el desplazamiento horizontal */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+/* Base de estilos */
 body {
   width: 100%;
   height: 100%;
@@ -15,7 +9,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  overflow-x: hidden; /* Elimina el desplazamiento horizontal */
+  overflow-x: hidden;
 }
 
 header {
@@ -40,6 +34,7 @@ header h1 {
   padding: 20px;
 }
 
+/* Menú de navegación */
 .menu {
   display: flex;
   justify-content: center;
@@ -55,7 +50,7 @@ header h1 {
   color: white;
   text-decoration: none;
   padding: 8px 12px;
-  font-size: 1rem;
+  font-size: 2vw; /* Usamos vw para tamaño responsivo */
   font-weight: 600;
   text-transform: uppercase;
   transition: color 0.3s ease, transform 0.3s ease;
@@ -85,74 +80,27 @@ header h1 {
   transform: scale(1.05);
 }
 
-/* Responsivo: Menú en columnas en dispositivos más pequeños */
+/* Media queries para ajustar el tamaño de las letras */
 @media (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    background-color: #2a3d66;
-    gap: 10px;
-  }
-
-  .menu.active {
-    display: flex;
-  }
-
   .menu li a {
-    font-size: 1rem;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
+    font-size: 4vw; /* Ajustamos el tamaño del texto en pantallas pequeñas */
   }
 }
 
 @media (max-width: 480px) {
   .menu li a {
-    font-size: 0.9rem;
-  }
-
-  header h1 {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .menu li a {
-    font-size: 0.8rem;
-  }
-
-  header h1 {
-    font-size: 1.1rem;
-  }
-}
-
-@media (min-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  .menu li a {
-    font-size: 1.2rem;
+    font-size: 5vw; /* Ajustamos más el tamaño para dispositivos aún más pequeños */
   }
 }
 
 @media (min-width: 1024px) {
-  header h1 {
-    font-size: 2.5rem;
-  }
-
   .menu li a {
-    font-size: 1.3rem;
+    font-size: 1.5rem; /* Para pantallas más grandes, usamos rem */
   }
 }
 
 @media (min-width: 1200px) {
-  header h1 {
-    font-size: 3rem;
-  }
-
   .menu li a {
-    font-size: 1.4rem;
+    font-size: 1.8rem; /* Un tamaño más grande en pantallas grandes */
   }
 }
