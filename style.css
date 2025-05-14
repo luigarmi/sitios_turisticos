@@ -1,3 +1,10 @@
+header {
+  background-color: #2a3d66;
+  color: white;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
 @media (max-width: 480px) {
   .menu {
     flex-direction: column;
