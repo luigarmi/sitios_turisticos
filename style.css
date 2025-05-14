@@ -1,3 +1,4 @@
+/* Estilos generales del header */
 header {
   background-color: #2a3d66;
   color: white;
@@ -10,6 +11,7 @@ header .container {
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
+  padding: 0 5%; /* Esto ajusta el margen lateral */
 }
 
 /* Título del sitio */
@@ -18,15 +20,6 @@ header h1 {
   text-align: center;
   margin: 10px 0;
   word-wrap: break-word;
-}
-
-/* Botón hamburguesa (invisible inicialmente) */
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-  text-align: right;
 }
 
 /* Menú de navegación */
@@ -112,6 +105,11 @@ header h1 {
   header h1 {
     font-size: 1.3rem;
   }
+
+  /* Margen adaptado */
+  header .container {
+    padding: 0 8%;
+  }
 }
 
 /* RESPONSIVE: Desde 320px hacia abajo */
@@ -123,6 +121,11 @@ header h1 {
   header h1 {
     font-size: 1.1rem;
   }
+
+  /* Margen adaptado */
+  header .container {
+    padding: 0 12%;
+  }
 }
 
 /* RESPONSIVE: Desde 240px hacia abajo */
@@ -133,6 +136,11 @@ header h1 {
 
   header h1 {
     font-size: 1rem;
+  }
+
+  /* Margen adaptado */
+  header .container {
+    padding: 0 15%;
   }
 }
 
@@ -146,6 +154,11 @@ header h1 {
   header h1 {
     font-size: 0.9rem;
   }
+
+  /* Margen adaptado */
+  header .container {
+    padding: 0 18%;
+  }
 }
 
 /* Para pantallas más grandes */
@@ -157,6 +170,11 @@ header h1 {
   .menu li a {
     font-size: 1.2rem;
   }
+
+  /* Margen adaptado */
+  header .container {
+    padding: 0 4%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -167,6 +185,11 @@ header h1 {
   .menu li a {
     font-size: 1.3rem;
   }
+
+  /* Margen adaptado */
+  header .container {
+    padding: 0 3%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -176,5 +199,10 @@ header h1 {
 
   .menu li a {
     font-size: 1.4rem;
+  }
+
+  /* Margen adaptado */
+  header .container {
+    padding: 0 2%;
   }
 }
