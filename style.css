@@ -267,20 +267,26 @@ footer {
   color: #2a3d66;
 }
 
-/* Adaptabilidad para pantallas pequeñas u horizontales */
 @media screen and (max-width: 768px),
        screen and (max-height: 500px) and (orientation: landscape) {
+  header {
+    padding: 10px 0;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+
   .menu {
-    gap: 15px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
   }
 
   .menu li a {
     font-size: 0.9rem;
-    padding: 8px 10px;
-  }
-
-  header h1 {
-    font-size: 1.4rem;
-    padding: 0 10px;
+    padding: 8px 12px;
+    text-align: center;
   }
 }
