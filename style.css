@@ -293,7 +293,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 9px;
-    padding: 5px 0;
+    padding: 3px 0;
   }
 
   .menu li a {
