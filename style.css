@@ -283,7 +283,7 @@ footer {
 }
 
 /* Dispositivos móviles en posición horizontal (landscape) */
-@media screen and (max-height: 460px) and (orientation: landscape) {
+@media screen and (max-height: 550px) and (orientation: landscape) {
   header h1 {
     font-size: 1.2rem;
     margin-bottom: 5px;
