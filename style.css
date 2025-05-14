@@ -6,7 +6,6 @@ header {
   width: 100%;
 }
 
-/* Contenedor centrado */
 header .container {
   width: 90%;
   max-width: 1200px;
@@ -22,7 +21,7 @@ header h1 {
   word-wrap: break-word;
 }
 
-/* Botón de hamburguesa (oculto por defecto) */
+/* Botón hamburguesa */
 .menu-toggle {
   display: none;
   font-size: 2rem;
@@ -31,7 +30,7 @@ header h1 {
   text-align: right;
 }
 
-/* Menú horizontal por defecto */
+/* Menú */
 .menu {
   display: flex;
   justify-content: center;
@@ -41,7 +40,6 @@ header h1 {
   padding: 0;
   margin: 10px 0 0 0;
   overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 .menu li a {
@@ -56,7 +54,6 @@ header h1 {
   word-break: break-word;
 }
 
-/* Línea animada debajo del enlace */
 .menu li a::after {
   content: "";
   display: block;
@@ -79,7 +76,7 @@ header h1 {
   transform: scale(1.05);
 }
 
-/* RESPONSIVE MENU: desde 768px hacia abajo */
+/* RESPONSIVE: Menú vertical desde 768px */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -100,30 +97,54 @@ header h1 {
   }
 
   .menu li a {
-    font-size: 0.95rem;
+    font-size: 1rem;
     padding: 10px;
     width: 100%;
     text-align: center;
   }
 }
 
-/* MÁS ADAPTADO: para pantallas muy pequeñas desde 150px */
-@media (max-width: 400px) {
-  header h1 {
-    font-size: 1.2rem;
-    padding: 0 10px;
+/* Desde 480px hacia abajo: letra más pequeña */
+@media (max-width: 480px) {
+  .menu li a {
+    font-size: 0.9rem;
   }
 
-  .menu li a {
-    font-size: 0.85rem;
-    padding: 10px;
-    word-break: break-word;
+  header h1 {
+    font-size: 1.3rem;
   }
 }
 
-@media (max-width: 280px) {
+/* Desde 320px: más pequeña */
+@media (max-width: 320px) {
   .menu li a {
-    font-size: 0.75rem;
-    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  header h1 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desde 240px: aún más pequeña */
+@media (max-width: 240px) {
+  .menu li a {
+    font-size: 0.7rem;
+  }
+
+  header h1 {
+    font-size: 1rem;
+  }
+}
+
+/* Desde 150px: mínimo legible */
+@media (max-width: 180px) {
+  .menu li a {
+    font-size: 0.65rem;
+    padding: 6px;
+  }
+
+  header h1 {
+    font-size: 0.9rem;
   }
 }
