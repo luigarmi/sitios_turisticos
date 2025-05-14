@@ -6,28 +6,40 @@
 }
 
 body {
-  overflow-x: hidden; /* Elimina el desplazamiento horizontal */
   width: 100%;
+  height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f4f9ff;
   color: #2a3d66;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden; /* Elimina el desplazamiento horizontal */
 }
 
-/* Header ajustado para evitar overflow */
 header {
+  width: 100%;
   background-color: #2a3d66;
   color: white;
-  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header .container {
-  width: 100%;
+header h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
   max-width: 1200px;
-  box-sizing: border-box;
-  padding: 0;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Menú ajustado para no provocar scroll */
 .menu {
   display: flex;
   justify-content: center;
@@ -112,16 +124,6 @@ header .container {
 
   header h1 {
     font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 240px) {
-  .menu li a {
-    font-size: 0.7rem;
-  }
-
-  header h1 {
-    font-size: 1rem;
   }
 }
 
