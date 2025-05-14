@@ -267,26 +267,34 @@ footer {
   color: #2a3d66;
 }
 
-@media screen and (max-width: 768px),
-       screen and (max-height: 370px) and (orientation: landscape) {
+@media screen and (max-width: 360px) {
   header {
-    padding: 10px 0;
+    padding: 8px;
   }
 
   header h1 {
-    font-size: 1.2rem;
-    padding: 0 10px;
+    font-size: 1rem;
   }
 
   .menu {
     flex-direction: column;
-    gap: 10px;
-    align-items: center;
+    gap: 5px;
+    padding: 5px 0;
   }
 
   .menu li a {
-    font-size: 0.9rem;
-    padding: 8px 12px;
-    text-align: center;
+    font-size: 0.8rem;
+    padding: 6px 8px;
+  }
+
+  .card img,
+  .galeria-grid img,
+  .destinos .destino img {
+    height: 150px;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 10px 20px;
   }
 }
