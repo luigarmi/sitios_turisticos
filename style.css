@@ -1,4 +1,19 @@
-/* Estilos generales del header */
+/* Evitar el desplazamiento horizontal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden; /* Elimina el desplazamiento horizontal */
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f9ff;
+  color: #2a3d66;
+}
+
+/* Header ajustado para evitar overflow */
 header {
   background-color: #2a3d66;
   color: white;
@@ -6,28 +21,21 @@ header {
 }
 
 header .container {
-  width: 100%; /* Sin margen ni padding */
+  width: 100%;
   max-width: 1200px;
   box-sizing: border-box;
+  padding: 0;
 }
 
-/* Título del sitio */
-header h1 {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 0; /* Eliminar margen */
-  word-wrap: break-word;
-}
-
-/* Menú de navegación */
+/* Menú ajustado para no provocar scroll */
 .menu {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
   list-style: none;
-  padding: 0; /* Eliminar padding */
-  margin: 0; /* Eliminar margin */
+  padding: 0;
+  margin: 0;
   overflow-wrap: break-word;
 }
 
@@ -65,14 +73,8 @@ header h1 {
   transform: scale(1.05);
 }
 
-/* RESPONSIVE: Menú vertical desde 768px */
+/* Responsivo: Menú en columnas en dispositivos más pequeños */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    text-align: right;
-    margin-bottom: 10px;
-  }
-
   .menu {
     flex-direction: column;
     align-items: center;
@@ -93,7 +95,6 @@ header h1 {
   }
 }
 
-/* RESPONSIVE: Desde 480px hacia abajo (letra más pequeña) */
 @media (max-width: 480px) {
   .menu li a {
     font-size: 0.9rem;
@@ -104,7 +105,6 @@ header h1 {
   }
 }
 
-/* RESPONSIVE: Desde 320px hacia abajo */
 @media (max-width: 320px) {
   .menu li a {
     font-size: 0.8rem;
@@ -115,7 +115,6 @@ header h1 {
   }
 }
 
-/* RESPONSIVE: Desde 240px hacia abajo */
 @media (max-width: 240px) {
   .menu li a {
     font-size: 0.7rem;
@@ -126,7 +125,6 @@ header h1 {
   }
 }
 
-/* Para pantallas más grandes */
 @media (min-width: 768px) {
   header h1 {
     font-size: 2rem;
