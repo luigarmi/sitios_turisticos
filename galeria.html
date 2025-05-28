@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Galería de Fotos | Turismo Colombia</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Turismo Colombia</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Turismo Colombia</h1>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-  <div class="container">
-    <h1>Mi Sitio Web</h1>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Icono hamburguesa -->
-    <ul class="menu" id="menu">
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Servicios</a></li>
-      <li><a href="#">Galería</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </div>
-</header>
+    <main>
+        <section class="galeria">
+            <h2>Galería de Planes Turísticos</h2>
+            <div class="imagenes">
+                <div class="imagen">
+                    <img src="imagenes/cartagena.jpg" alt="Cartagena">
+                    <p><strong>Cartagena</strong> – Todo incluido desde $1.200.000 COP</p>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/san_andres.jpg" alt="San Andrés">
+                    <p><strong>San Andrés</strong> – Vuelo + Alojamiento desde $950.000 COP</p>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/medellin.jpg" alt="Medellín">
+                    <p><strong>Medellín</strong> – Solo vuelos desde $450.000 COP</p>
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/santa_marta.jpg" alt="Santa Marta">
+                    <p><strong>Santa Marta</strong> – Alojamiento + Tours desde $780.000 COP</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <p>&copy; 2025 Turismo Colombia. Todos los derechos reservados.</p>
+    </footer>
 
-
-<main class="container">
-  <section class="galeria">
-    <h2>Galería de Imágenes</h2>
-    <div class="galeria-grid">
-      <img src="img/playa1.jpg" alt="Playa paradisíaca">
-      <img src="img/montaña1.jpg" alt="Montaña andina">
-      <img src="img/selva1.jpg" alt="Selva amazónica">
-      <img src="img/ciudad1.jpg" alt="Ciudad colonial">
-      <img src="img/isla1.jpg" alt="Isla caribeña">
-      <img src="img/parque1.webp" alt="Parque natural">
-    </div>
-  </section>
-</main>
-
-<footer>
-  <p>© 2025 Turismo Colombia | Todos los derechos reservados.</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
