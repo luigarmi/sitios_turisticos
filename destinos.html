@@ -1,62 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Destinos Turísticos | Turismo Colombia</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos - Turismo Colombia</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Turismo Colombia</h1>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-  <div class="container">
-    <h1>Mi Sitio Web</h1>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Icono hamburguesa -->
-    <ul class="menu" id="menu">
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Servicios</a></li>
-      <li><a href="#">Galería</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </div>
-</header>
+    <main>
+        <section class="destinos">
+            <h2>Destinos Turísticos</h2>
 
+            <div class="destino">
+                <h3>Cartagena</h3>
+                <p>Disfruta de las playas del Caribe, ciudad amurallada y gastronomía local.</p>
+                <ul>
+                    <li>Plan todo incluido: $1.200.000 COP</li>
+                    <li>Vuelo + Alojamiento: $950.000 COP</li>
+                    <li>Solo vuelos: $480.000 COP</li>
+                </ul>
+            </div>
 
-<main class="container">
-  <section class="destinos">
-    <h2>Destinos Imperdibles</h2>
+            <div class="destino">
+                <h3>San Andrés</h3>
+                <p>Un paraíso de mar de siete colores, perfecto para bucear y descansar.</p>
+                <ul>
+                    <li>Plan todo incluido: $1.400.000 COP</li>
+                    <li>Vuelo + Alojamiento: $1.050.000 COP</li>
+                    <li>Solo vuelos: $520.000 COP</li>
+                </ul>
+            </div>
 
-    <div class="destino">
-      <img src="img/cartagena.jpg" alt="Cartagena de Indias">
-      <div class="destino-info">
-        <h3>Cartagena de Indias</h3>
-        <p>Una ciudad llena de historia, murallas y playas mágicas. Patrimonio de la Humanidad por la UNESCO.</p>
-      </div>
-    </div>
+            <div class="destino">
+                <h3>Santa Marta</h3>
+                <p>Recorre el Parque Tayrona, playas vírgenes y pueblos mágicos como Minca.</p>
+                <ul>
+                    <li>Plan todo incluido: $1.100.000 COP</li>
+                    <li>Vuelo + Alojamiento: $900.000 COP</li>
+                    <li>Solo vuelos: $470.000 COP</li>
+                </ul>
+            </div>
 
-    <div class="destino">
-      <img src="img/sanandres.jpg" alt="San Andrés">
-      <div class="destino-info">
-        <h3>San Andrés</h3>
-        <p>El mar de siete colores te espera en esta joya caribeña, perfecta para bucear y relajarte.</p>
-      </div>
-    </div>
+            <div class="destino">
+                <h3>Medellín</h3>
+                <p>Ciudad de la eterna primavera, ideal para turismo urbano, cultura y naturaleza.</p>
+                <ul>
+                    <li>Plan todo incluido: $1.000.000 COP</li>
+                    <li>Vuelo + Alojamiento: $800.000 COP</li>
+                    <li>Solo vuelos: $450.000 COP</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
-    <div class="destino">
-      <img src="img/amazonas.jpg" alt="Amazonas colombiano">
-      <div class="destino-info">
-        <h3>Amazonas</h3>
-        <p>Explora la selva más biodiversa del planeta, hogar de culturas indígenas y una naturaleza exuberante.</p>
-      </div>
-    </div>
+    <footer>
+        <p>&copy; 2025 Turismo Colombia. Todos los derechos reservados.</p>
+    </footer>
 
-  </section>
-</main>
-
-<footer>
-  <p>© 2025 Turismo Colombia | Todos los derechos reservados.</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
